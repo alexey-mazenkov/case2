@@ -4,6 +4,8 @@
 #             A.Mikhailov
 #             K.Kravtsov
 
+import turtle
+
 def triangle():
     # TODO: (Kravtsov) - нарисуй треугольник
 
@@ -14,6 +16,7 @@ def square():
 
 def circle():
     # TODO: (Mazenkov) - нарисовать круг
+    
 
 def main():
     # TODO: (Mazenkov)
