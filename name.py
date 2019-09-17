@@ -24,14 +24,25 @@ def figure2():
 
 def figure3():
     # TODO: (Kravtsov) - нарисуй произвольную фигуру 4
+
     pass
 
 def figure4():
     # TODO: (Kravtsov) - нарисуй произвольную фигуру 4, чтобы одна сторона с figure3 была одинаковой
     pass
 
-def triangle():
+def triangle(x, y, a, b, c):
     # TODO: (Kravtsov) - нарисуй треугольник
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(b)
+    turtle.right(45)
+    turtle.forward(c)
+    turtle.right(45)
+    turtle.up()
     pass
 
 def rectangle():
