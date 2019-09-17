@@ -22,8 +22,15 @@ def square(x, y, a):
     turtle.up
     turtle.exitonclick()
 
-def circle():
+def circle(x,y,a):
     # TODO: (Mikhailov) - нарисовать круг
+    turtle.up()
+    turtle.setposition(x,y)
+    turtle.circle(a)
+    turtle.down()
+    turtle.exitoclick()
+
+
     pass
 
 def figure1():
