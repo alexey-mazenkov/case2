@@ -68,7 +68,7 @@ def main():
     '''
     # рисунок 1.
     square(100,100,100)
-
+    
     turtle.done()
 
 
