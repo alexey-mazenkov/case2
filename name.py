@@ -8,6 +8,18 @@ import turtle
 
 def square():
     # TODO: (Mikhailov) - нарисуй квадрат
+    turtle.up()
+    turtle.setpositions(x,y)
+    turtle.down()
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.up
     pass
 
 def circle():
