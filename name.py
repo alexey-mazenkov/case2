@@ -22,9 +22,14 @@ def square(x, y, a):
     turtle.up
     turtle.exitonclick()
 
-def circle():
+def circle(x,y,a):
     # TODO: (Mikhailov) - нарисовать круг
-    pass
+    turtle.up()
+    turtle.setposition(x,y)
+    turtle.down()
+    turtle.circle(a)
+    turtle.exitoclick()
+
 
 def figure1():
     # TODO: (Mikhailov) - нарисуй фигуру
@@ -108,8 +113,8 @@ def main():
     :return: None
     '''
     # рисунок 1.
-    square(100,100,100)
-
+    circle(100,100,100)
+    
     turtle.done()
 
 
