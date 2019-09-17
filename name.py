@@ -26,12 +26,10 @@ def circle(x,y,a):
     # TODO: (Mikhailov) - нарисовать круг
     turtle.up()
     turtle.setposition(x,y)
-    turtle.circle(a)
     turtle.down()
+    turtle.circle(a)
     turtle.exitoclick()
 
-
-    pass
 
 def figure1():
     # TODO: (Mikhailov) - нарисуй фигуру
@@ -74,7 +72,7 @@ def main():
     :return: None
     '''
     # рисунок 1.
-    square(100,100,100)
+    circle(100,100,100)
     
     turtle.done()
 
