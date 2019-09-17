@@ -6,9 +6,21 @@
 
 import turtle
 
-def square():
+def square(x, y, a):
     # TODO: (Mikhailov) - нарисуй квадрат
-    pass
+    turtle.up()
+    turtle.setposition(x,y)
+    turtle.down()
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.up
+    turtle.exitonclick()
 
 def circle():
     # TODO: (Mikhailov) - нарисовать круг
@@ -50,6 +62,15 @@ def rectangle():
     pass
 
 def main():
-    # TODO: (Mazenkov)
-    # Main function
-    pass
+    '''
+    Main function.
+    :return: None
+    '''
+    # рисунок 1.
+    square(100,100,100)
+
+    turtle.done()
+
+
+if __name__ == '__main__':
+    main()
