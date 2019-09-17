@@ -9,7 +9,7 @@ import turtle
 def square(x, y, a):
     # TODO: (Mikhailov) - нарисуй квадрат
     turtle.up()
-    turtle.setposition(x,y)
+    turtle.setposition(x, y)
     turtle.down()
     turtle.forward(a)
     turtle.right(90)
@@ -22,17 +22,28 @@ def square(x, y, a):
     turtle.up
     turtle.exitonclick()
 
-def circle(x,y,a):
+def circle(x, y, a):
     # TODO: (Mikhailov) - нарисовать круг
     turtle.up()
-    turtle.setposition(x,y)
+    turtle.setposition(x, y)
     turtle.down()
     turtle.circle(a)
-    turtle.exitoclick()
 
 
-def figure1():
+def figure1(x, y, z):
     # TODO: (Mikhailov) - нарисуй фигуру
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.forward(a)
+    turtle.right(140)
+    turtle.forward(a)
+    turtle.right(40)
+    turtle.forward(a)
+    turtle.right(140)
+    turtle.forward(a)
+    turtle.right(40)
+    turtle.up()
     pass
 
 def figure2():
