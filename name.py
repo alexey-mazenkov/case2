@@ -84,47 +84,6 @@ def triangle(x, y, a, b, c):
     turtle.right(135)
     turtle.up()
     pass
-def triangle2(x, y, a, b, c):
-    # TODO: (Kravtsov) - нарисуй треугольник под другим углом
-    turtle.up()
-    turtle.setposition(x, y)
-    turtle.down()
-    turtle.forward(a)
-    turtle.right(135)
-    turtle.forward(b)
-    turtle.right(135)
-    turtle.forward(c)
-    turtle.right(90)
-    turtle.up()
-    pass
-
-def triangle3(x, y, a, b, c):
-    # TODO: (Kravtsov) - нарисуй треугольник под другим углом
-    turtle.up()
-    turtle.setposition(x, y)
-    turtle.down()
-    turtle.left(90)
-    turtle.forward(a)
-    turtle.right(135)
-    turtle.forward(b)
-    turtle.right(135)
-    turtle.forward(c)
-    turtle.up()
-    pass
-
-def triangle4(x, y, a, b, c):
-    # TODO: (Kravtsov) - нарисуй стреугольник под другим углом
-    turtle.up()
-    turtle.setposition(x, y)
-    turtle.down()
-    turtle.forward(a)
-    turtle.left(90)
-    turtle.forward(b)
-    turtle.left(135)
-    turtle.forward(c)
-    turtle.left(135)
-    turtle.up()
-    pass
 
 def rectangle():
     # TODO: (Kravtsov) - нарисуй прямоугольник
