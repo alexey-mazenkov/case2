@@ -46,8 +46,20 @@ def figure1(x, y, z):
     turtle.up()
     pass
 
-def figure2():
+def figure2(x, y, z):
     # TODO: (Mikhailov) - нарисуй фигуру 2, чтобы одна сторона с figure1 была одинаковой
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.forward(a)
+    turtle.right(120)
+    turtle.forward(a)
+    turtle.right(60)
+    turtle.forward(a)
+    turtle.right(60)
+    turtle.forward(a)
+    turtle.right(120)
+    turtle.up()
     pass
 
 def figure3():
