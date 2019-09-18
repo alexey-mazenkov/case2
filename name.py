@@ -30,7 +30,7 @@ def circle(x, y, a):
     turtle.circle(a)
 
 
-def figure1(x, y, z):
+def figure1(x, y, a):
     # TODO: (Mikhailov) - нарисуй фигуру
     turtle.up()
     turtle.setposition(x, y)
@@ -44,9 +44,9 @@ def figure1(x, y, z):
     turtle.forward(a)
     turtle.right(40)
     turtle.up()
-    pass
 
-def figure2(x, y, z):
+
+def figure2(x, y, a):
     # TODO: (Mikhailov) - нарисуй фигуру 2, чтобы одна сторона с figure1 была одинаковой
     turtle.up()
     turtle.setposition(x, y)
@@ -56,11 +56,10 @@ def figure2(x, y, z):
     turtle.forward(a)
     turtle.right(60)
     turtle.forward(a)
-    turtle.right(60)
-    turtle.forward(a)
     turtle.right(120)
+    turtle.forward(a)
     turtle.up()
-    pass
+
 
 def figure3():
     # TODO: (Kravtsov) - нарисуй произвольную фигуру 4
@@ -77,13 +76,13 @@ def triangle(x, y, a, b, c):
     turtle.setposition(x, y)
     turtle.down()
     turtle.forward(a)
-    turtle.right(90)
+    turtle.right(120)
     turtle.forward(b)
-    turtle.right(135)
+    turtle.right(120)
     turtle.forward(c)
-    turtle.right(135)
+    turtle.right(120)
     turtle.up()
-    pass
+
 
 def rectangle():
     # TODO: (Kravtsov) - нарисуй прямоугольник
@@ -95,8 +94,11 @@ def main():
     :return: None
     '''
     # рисунок 1.
+    turtle.hideturtle()
     circle(100,100,100)
-    
+    triangle(0, 0, 20, 20, 20)
+    figure2(-100, -100, 20)
+    figure1(-40, 0, 30)
     turtle.done()
 
 
