@@ -61,32 +61,67 @@ def figure2(x, y, a):
     turtle.up()
 
 
-def figure3():
+def figure3(x, y, a):
     # TODO: (Kravtsov) - нарисуй произвольную фигуру 4
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.forward(a)
+    turtle.right(72)
+    turtle.forward(a)
+    turtle.right(72)
+    turtle.forward(a)
+    turtle.right(72)
+    turtle.forward(a)
+    turtle.right(72)
+    turtle.forward(a)
+    turtle.right(72)
+    turtle.up()
 
-    pass
 
-def figure4():
+def figure4(x, y, a, b, c):
     # TODO: (Kravtsov) - нарисуй произвольную фигуру 4, чтобы одна сторона с figure3 была одинаковой
-    pass
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(b)
+    turtle.right(120)
+    turtle.forward(c)
+    turtle.right(150)
+    turtle.up()
 
-def triangle(x, y, a, b, c):
-    # TODO: (Kravtsov) - нарисуй треугольник
+
+def triangle(x, y, a):
+    # TODO: (Kravtsov) - нарисуй равносторонний треугольник
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
     turtle.forward(a)
     turtle.right(120)
-    turtle.forward(b)
+    turtle.forward(a)
     turtle.right(120)
-    turtle.forward(c)
+    turtle.forward(a)
     turtle.right(120)
     turtle.up()
 
 
-def rectangle():
+def rectangle(x, y, a, b):
     # TODO: (Kravtsov) - нарисуй прямоугольник
-    pass
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(b)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(b)
+    turtle.right(90)
+    turtle.up()
+
 
 def main():
     '''
