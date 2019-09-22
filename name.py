@@ -199,13 +199,15 @@ def triangle2(x, y, color) :
     t.forward(70)
     t.end_fill()
 
-def ellipse(x, y, color):
+def ellipse(x, y, r, color):
     t.setposition(x, y)
     t.begin_fill()
     t.color(color)
-    t.shape('circle')
-    t.shapesize(50, 40, 10)
-    t.begin_fill()
+    turtle.left(45)
+    for loop in range(2):  # Draws 2 halves of ellipse
+            turtle.circle(r, 90)  # Long curved part
+            turtle.circle(r / 2, 90)
+    t.end_fill()
 
 def main():
     '''
@@ -239,6 +241,10 @@ def main():
     triangle2(-68, 192, 'orange')
     t.left(100)
     rectangle(-139, 193, 62, 40, 'blue')
+    t.right(71)
+    rectangle(23, 231, 60, 40, 'black')
+    t.left(110)
+    ellipse(-65, 210, 50, '#F4CD8A')
     turtle.done()
 
 
