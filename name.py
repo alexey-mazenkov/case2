@@ -15,6 +15,7 @@ def square(x, y, a):
     t.up()
     t.setposition(x, y)
     t.down()
+    t.begin_fill()
     t.forward(a)
     t.right(90)
     t.forward(a)
@@ -23,6 +24,7 @@ def square(x, y, a):
     t.right(90)
     t.forward(a)
     t.right(90)
+    t.end_fill()
     t.up
 
 def circle(x, y, a):
@@ -30,8 +32,9 @@ def circle(x, y, a):
     t.up()
     t.setposition(x, y)
     t.down()
+    t.begin_fill()
     t.circle(a)
-
+    t.end_fill()
 
 def figure1(x, y, a):
     # TODO: (Mikhailov) - нарисуй фигуру
@@ -39,6 +42,7 @@ def figure1(x, y, a):
     t.up()
     t.setposition(x, y)
     t.down()
+    t.begin_fill()
     t.forward(a)
     t.right(140)
     t.forward(a)
@@ -47,6 +51,7 @@ def figure1(x, y, a):
     t.right(140)
     t.forward(a)
     t.right(40)
+    t.end_fill()
     t.up()
 
 
@@ -56,6 +61,7 @@ def figure2(x, y, a):
     t.up()
     t.setposition(x, y)
     t.down()
+    t.begin_fill()
     t.forward(a)
     t.right(120)
     t.forward(a)
@@ -63,6 +69,7 @@ def figure2(x, y, a):
     t.forward(a)
     t.right(120)
     t.forward(a)
+    t.end_fill()
     t.up()
 
 
@@ -72,6 +79,7 @@ def figure3(x, y, a):
     t.up()
     t.setposition(x, y)
     t.down()
+    t.begin_fill()
     t.forward(a)
     t.right(72)
     t.forward(a)
@@ -82,6 +90,7 @@ def figure3(x, y, a):
     t.right(72)
     t.forward(a)
     t.right(72)
+    t.end_fill()
     t.up()
 
 
@@ -95,23 +104,27 @@ def figure4(x, y, a):
     b = (a * m.tan(math.radians(45)))
     c = (a / m.cos(math.radians(45)))
 
+    t.begin_fill()
     t.forward(a)
     t.left(135)
     t.forward(c)
     t.left(135)
     t.forward(b)
+    t.end_fill()
 
 def triangle(x, y, a):
     # TODO: (Kravtsov) - нарисуй равносторонний треугольник
     t.up()
     t.setposition(x, y)
     t.down()
+    t.begin_fill()
     t.forward(a)
     t.right(120)
     t.forward(a)
     t.right(120)
     t.forward(a)
     t.right(120)
+    t.end_fill()
     t.up()
 
 
@@ -120,6 +133,7 @@ def rectangle(x, y, a, b):
     t.up()
     t.setposition(x, y)
     t.down()
+    t.begin_fill()
     t.forward(a)
     t.right(90)
     t.forward(b)
@@ -128,12 +142,14 @@ def rectangle(x, y, a, b):
     t.right(90)
     t.forward(b)
     t.right(90)
+    t.end_fill()
     t.up()
 
 def leg(x,y):
     t.up()
     t.setposition(x, y)
     t.down()
+    t.begin_fill()
     t.forward(70)
     t.right(110)
     t.forward(50)
@@ -143,11 +159,13 @@ def leg(x,y):
     t.forward(35)
     t.right(105)
     t.forward(28)
+    t.end_fill()
 
 def leg2 (x, y):
     t.up()
     t.setposition(x, y)
     t.down()
+    t.begin_fill()
     t.forward(30)
     t.right(20)
     t.forward(40)
@@ -157,6 +175,7 @@ def leg2 (x, y):
     t.forward(80)
     t.left(115)
     t.forward(65)
+    t.end_fill()
 
 def main():
     '''
@@ -167,50 +186,31 @@ def main():
     # рисунок 1.
     t.hideturtle()
     t.color('red')
-    t.begin_fill()
     t.left(230)
     figure4(140, 40, 40)
-    t.end_fill()
-    t.begin_fill()
     t.color('blue')
     rectangle(119, 15, 80, 30)
-    t.end_fill()
     t.left(55)
-    t.begin_fill()
     t.color('#F4CD8A')
-    t.begin_fill()
     leg(58, 68)
-    t.end_fill()
     t.color('black')
-    t.begin_fill()
     t.right(35)
     figure2(-25, 30, 70)
-    t.end_fill()
-    t.begin_fill()
     t.color('red')
     t.right(65)
     figure2(-9, 40, 70)
-    t.end_fill()
     t.left(37)
-    t.begin_fill()
     t.color('#F4CD8A')
     leg2(-90, 12)
-    t.end_fill()
     t.left(74)
-    t.begin_fill()
     t.color('red')
     rectangle(-80, -23, 30, 80)
-    t.end_fill()
-    t.begin_fill()
     t.color('blue')
     t.right(90)
     figure4(-160, -18, 40)
-    t.end_fill()
     t.left(40)
-    t.begin_fill()
     t.color('orange')
     figure3(-63, 80, 70)
-    t.end_fill()
     turtle.done()
 
 
