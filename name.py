@@ -177,6 +177,17 @@ def leg2 (x, y):
     t.forward(65)
     t.end_fill()
 
+def triangle2(x, y) :
+    t.setposition(x, y)
+    t.begin_fill()
+    t.right(60)
+    t.forward(70)
+    t.right(156)
+    t.forward(129)
+    t.right(156)
+    t.forward(70)
+    t.end_fill()
+
 def main():
     '''
     Main function.
@@ -211,6 +222,14 @@ def main():
     t.left(40)
     t.color('orange')
     figure3(-63, 80, 70)
+    t.color('black')
+    t.left(37)
+    triangle(0, 175, 70)
+    t.color('blue')
+    t.left(73)
+    triangle(-68, 192, 70)
+    t.color('orange')
+    triangle2(-68, 192)
     turtle.done()
 
 
