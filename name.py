@@ -309,8 +309,9 @@ def house():
     square(475, 325, 50, 'white', 0, 0)
 
 def ball():
-    circle(350, 50, 50, 'yellow', 0, 0)
-    star(315, 110, 70, 'red')
+    circle(350, 70, 50, 'yellow', 0, 0)
+    t.left(75)
+    star(370, 50, 70, 'red')
 
 def main():
     '''
