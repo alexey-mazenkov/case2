@@ -265,8 +265,10 @@ def main():
     rectangle(-139, 193, 62, 40, 'blue', 0, 100)
     rectangle(23, 231, 60, 40, 'black', 71, 0)
     ellipse(-65, 210, 50, '#F4CD8A', 0, 110)
-    #arc(40, 210, 30, 100, '#F4CD8A', 0, 0)
-    rectangle(40,210, 40, 50, '#F4CD8A', 0, 0)
+    rectangle(13, 195, 30, 80, '#F4CD8A', 0, 25)
+    arc(90, 173, 20, 100, '#F4CD8A', 51, 0)
+    figure2(-135, 140, 30, '#F4CD8A', 0, 140)
+    rectangle(-145, 135, 30, 50, '#F4CD8A', 35, 0)
     turtle.done()
 
 
