@@ -2,7 +2,7 @@
 # размер окна 1000*1000
 # Developers: A.Mazenkov
 #             A.Mikhailov
-#             K.Kravtsov
+#             K.Kravtsov 15%
 
 import turtle
 import math
