@@ -1,8 +1,8 @@
 # нарисовать фигуры
 # размер окна 1000*1000
-# Developers: A.Mazenkov
-#             A.Mikhailov
-#             K.Kravtsov 15%
+# Developers: A.Mazenkov --- 60%
+#             A.Mikhailov --- 30%
+#             K.Kravtsov --- 25%
 
 import turtle
 import math
@@ -11,7 +11,6 @@ t = turtle
 m = math
 
 def square(x, y, a, color, right, left):
-    # TODO: (Mikhailov) - нарисуй квадрат
     t.up()
     t.setposition(x, y)
     t.right(right)
@@ -31,7 +30,6 @@ def square(x, y, a, color, right, left):
     t.up
 
 def circle(x, y, a, color, right, left):
-    # TODO: (Mikhailov) - нарисовать круг
     t.up()
     t.setposition(x, y)
     t.right(right)
@@ -43,8 +41,7 @@ def circle(x, y, a, color, right, left):
     t.end_fill()
 
 def figure1(x, y, a, color, right, left):
-    # TODO: (Mikhailov) - нарисуй фигуру
-    # Ромб.
+    # Rhombus.
     t.up()
     t.setposition(x, y)
     t.right(right)
@@ -65,8 +62,7 @@ def figure1(x, y, a, color, right, left):
 
 
 def figure2(x, y, a, color, right, left):
-    # TODO: (Mikhailov) - нарисуй фигуру 2, чтобы одна сторона с figure1 была одинаковой
-    # Параллелограмм
+    # Parallelogram.
     t.up()
     t.setposition(x, y)
     t.right(right)
@@ -86,8 +82,7 @@ def figure2(x, y, a, color, right, left):
 
 
 def figure3(x, y, a, color, right, left):
-    # TODO: (Kravtsov) - нарисуй произвольную фигуру 4
-    # Пятиугольник
+    # Pentagon.
     t.up()
     t.setposition(x, y)
     t.right(right)
@@ -110,8 +105,7 @@ def figure3(x, y, a, color, right, left):
 
 
 def figure4(x, y, a, color, right, left):
-    # TODO: (Kravtsov) - нарисуй произвольную фигуру 4, чтобы одна сторона с figure3 была одинаковой
-    # Прямоугольный треугольник
+    # Right triangle.
     t.up()
     t.setposition(x, y)
     t.down()
@@ -130,8 +124,20 @@ def figure4(x, y, a, color, right, left):
     t.forward(b)
     t.end_fill()
 
+def figure5(x, y, a, color):
+        turtle.up()
+        turtle.setposition(x, y)
+        turtle.down()
+        turtle.color(color)
+        turtle.begin_fill()
+        turtle.forward(a)
+        turtle.right(60)
+        turtle.forward(a)
+        turtle.right(120)
+        turtle.forward(a)
+        turtle.end_fill()
+
 def triangle(x, y, a, color, right, left):
-    # TODO: (Kravtsov) - нарисуй равносторонний треугольник
     t.up()
     t.setposition(x, y)
     t.right(right)
@@ -150,7 +156,6 @@ def triangle(x, y, a, color, right, left):
 
 
 def rectangle(x, y, a, b, color, right, left):
-    # TODO: (Kravtsov) - нарисуй прямоугольник
     t.up()
     t.setposition(x, y)
     t.right(right)
@@ -221,6 +226,21 @@ def triangle2(x, y, color, right, left) :
     t.forward(70)
     t.end_fill()
 
+def triangle3(x, y, a, b, color, right, left):
+    t.up()
+    t.setposition(x, y)
+    t.right(right)
+    t.left(left)
+    t.down()
+    t.color(color)
+    t.begin_fill()
+    t.forward(a)
+    t.right(90)
+    t.forward(a)
+    t.right(135)
+    t.forward(b)
+    t.end_fill()
+
 def ellipse(x, y, r, color, right, left):
     t.setposition(x, y)
     t.right(right)
@@ -242,14 +262,7 @@ def arc(x, y, r, angle, color, right, left):
     t.circle(r, angle)
     t.end_fill()
 
-def main():
-    '''
-    Main function.
-    :return: None
-    '''
-
-    # рисунок 1.
-    t.hideturtle()
+def sportsman():
     figure4(140, 40, 40, 'red', 0, 230)
     rectangle(119, 15, 80, 30, 'blue', 0, 0)
     leg(58, 68, '#F4CD8A', 0, 55)
@@ -269,6 +282,46 @@ def main():
     arc(90, 173, 20, 100, '#F4CD8A', 51, 0)
     figure2(-135, 140, 30, '#F4CD8A', 0, 140)
     rectangle(-145, 135, 30, 50, '#F4CD8A', 35, 0)
+
+def olympic():
+    circle(0, 350, 45, 'blue', 0, 0)
+    circle(110, 350, 45, 'black', 0, 0)
+    circle(220, 350, 45, 'red', 0, 0)
+    circle(55, 300, 45, 'yellow', 0, 0)
+    circle(165, 300, 45, 'green', 0, 0)
+
+def star(x, y, size, color):
+    t.up()
+    t.setposition(x, y)
+    t.down()
+    t.color(color)
+    count = 0
+    angle = 144
+    while count <= 5:
+        turtle.forward(size)
+        turtle.right(angle)
+        count += 1
+    return
+
+def house():
+    square(500, 300, 100, 'brown', 0, 35)
+    triangle(520, 400, 140, 'black', 0, 0)
+    square(475, 325, 50, 'white', 0, 0)
+
+def main():
+    '''
+    Main function.
+    :return: None
+    '''
+
+    t.hideturtle()
+
+    sportsman()
+    olympic()
+    star(-200, 300, 100, 'red')
+    house()
+
+
     turtle.done()
 
 
