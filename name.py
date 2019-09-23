@@ -1,8 +1,8 @@
 # нарисовать фигуры
 # размер окна 1000*1000
 # Developers: A.Mazenkov --- 60%
-#             A.Mikhailov --- 30%
-#             K.Kravtsov --- 25%
+#             A.Mikhailov --- 
+#             K.Kravtsov ---
 
 import turtle
 import math
@@ -308,6 +308,10 @@ def house():
     triangle(520, 400, 140, 'black', 0, 0)
     square(475, 325, 50, 'white', 0, 0)
 
+def ball():
+    circle(350, 50, 50, 'yellow', 0, 0)
+    star(315, 110, 70, 'red')
+
 def main():
     '''
     Main function.
@@ -320,7 +324,7 @@ def main():
     olympic()
     star(-200, 300, 100, 'red')
     house()
-
+    ball()
 
     turtle.done()
 
